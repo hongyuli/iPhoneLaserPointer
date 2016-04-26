@@ -245,8 +245,7 @@
 			children = (
 				5863380E1CC73DE80073F6B4 /* index.html */,
 			);
-			name = Web;
-			path = "../../../CocoaHTTPServer-master/Samples/iPhoneHTTPServer/Web";
+			path = Web;
 			sourceTree = "<group>";
 		};
 		58B23BC41CC6D86500DFD688 /* Core */ = {
@@ -268,8 +267,7 @@
 				58B23BEA1CC6D86500DFD688 /* WebSocket.h */,
 				58B23BEB1CC6D86500DFD688 /* WebSocket.m */,
 			);
-			name = Core;
-			path = "../../../CocoaHTTPServer-master/Core";
+			path = Core;
 			sourceTree = "<group>";
 		};
 		58B23BC51CC6D86500DFD688 /* Categories */ = {
@@ -323,8 +321,7 @@
 				58B23BFE1CC6D88100DFD688 /* CocoaAsyncSocket */,
 				58B23C021CC6D88100DFD688 /* CocoaLumberjack */,
 			);
-			name = Vendor;
-			path = "../../../CocoaHTTPServer-master/Vendor";
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		58B23BFE1CC6D88100DFD688 /* CocoaAsyncSocket */ = {
