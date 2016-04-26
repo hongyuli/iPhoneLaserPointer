@@ -12,3 +12,6 @@
 #import "DDTTYLogger.h"
 #import "MyHTTPConnection.h"
 #import "IMUDataManager.h"
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <ifaddrs.h>

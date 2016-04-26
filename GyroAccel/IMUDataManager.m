@@ -31,12 +31,10 @@
 }
 
 - (instancetype) init {
-    self.position_x = 0;
-    self.position_y = 0;
     self.speed_x=0;
     self.speed_y=0;
-    self.position_x=0;
-    self.position_y=0;
+    self.distance_x=0;
+    self.distance_y=0;
     if (self = [super init]) {
         motionManager = [[CMMotionManager alloc] init];
         //MotionManager
@@ -60,8 +58,8 @@
                      self.speed_x = self.speed_x + devicemotion.userAcceleration.y;
                      self.speed_y = self.speed_y + devicemotion.userAcceleration.z;
                      
-                     self.position_x = self.position_x+self.speed_x;
-                     self.position_y = self.position_y+self.speed_y;
+                     self.distance_x = self.distance_x+self.speed_x;
+                     self.distance_y = self.distance_y+self.speed_y;
                      
                  }];
             }

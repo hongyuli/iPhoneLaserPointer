@@ -19,8 +19,8 @@
 @property NSString * accVal_z;
 @property double speed_x;
 @property double speed_y;
-@property double position_x;
-@property double position_y;
+@property double distance_x;
+@property double distance_y;
 
 + (instancetype) sharedIMUDataManager;
 

@@ -61,8 +61,8 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN; // | HTTP_LOG_FLAG_TRACE;
         NSString * x_accVal = dataManager.accVal_x;
         NSString * y_accVal = dataManager.accVal_y;
         NSString * z_accVal = dataManager.accVal_z;
-        NSString * x_pos = [[NSString alloc] initWithFormat:@"%f", dataManager.position_x];
-        NSString * y_pos = [[NSString alloc] initWithFormat:@"%f", dataManager.position_y];
+        NSString * x_pos = [[NSString alloc] initWithFormat:@"%f", dataManager.distance_x];
+        NSString * y_pos = [[NSString alloc] initWithFormat:@"%f", dataManager.distance_y];
         
         if (x_accVal.length == 0) {
             x_accVal = @"No data";
