@@ -1,42 +1,57 @@
 <html>
-<head>
-	<title>Dynamic Server Example</title>
-</head>
-<body bgcolor="#FFFFFF">
-	<h1>
-		Welcome to <a href="https://github.com/robbiehanson/CocoaHTTPServer">CocoaHTTPServer</a>!
-	</h1>
-	
-	<p>
-	Parts of this file are generated dynamically.<br/>
-	This is done via the HTTPDynamicFileResponse class.<br/>
-	It uses a replacement dictionary to automatically replace<br/>
-	tagged strings in the included Web/index.html file.<br/>
-	</p>
-	
-	<p>
-	Computer name: %%COMPUTER_NAME%%<br/>
-	<br/>
-	
-	<!-- Test 1: replacement value length > key length -->
-	The current time is: %%TIME%%<br/>
-	<br/>
-	Tell me a story: %%STORY%%<br/>
-	<br/>
-<<<<<<< HEAD
-=======
-	test
->>>>>>> 1b4f901c6ac345f04f4182c3eb23d75ee16e5cf4
-	<!-- Test 2: replacement value length < key length -->
-	The first letter of the english alphabet: %%ALPHABET%%<br/>
-	<br/>
-	
-	<!-- Test 3: replacement value length == key length -->
-	The sound a duck makes: %%QUACK%%<br/>
-	<br/>
-	<br/>
-	Thank you. Come again.
-	</p>
-	
-</body>
+    <head>
+        <title>Dynamic Server Example</title>
+    </head>
+    <body bgcolor="#FFFFFF">
+        <h1>
+            Welcome to Hongyu's Test HTTPServer
+        </h1>
+        
+        
+        <div>
+            Computer name: %%COMPUTER_NAME%%
+        </div>
+        
+        <div>
+            The current time is: %%TIME%%
+        </div>
+        
+        <div>
+            Current X axis acceleration:
+        </div>
+        <div id="accx">
+            %%AccX%%
+        </div>
+        
+        
+        <div>
+            Current Y axis acceleration:
+        </div>
+        <div id="accy">
+            %%AccY%%
+        </div>
+        
+        
+        <div>
+            Current Z axis acceleration:
+        </div>
+        <div id="accz">
+            %%AccZ%%
+        </div>
+        
+        
+        <div>
+            Position X:
+        </div>
+        <div id="posx">
+            %%PosX%%
+        </div>
+        
+        <div>
+            Position Y:
+        </div>
+        <div id="posy">
+            %%PosY%%
+        </div>
+    </body>
 </html>
