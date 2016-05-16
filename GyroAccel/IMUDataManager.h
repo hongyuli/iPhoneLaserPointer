@@ -11,7 +11,6 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
-//#import "GyroAccel-Swift.h"
 
 @protocol IMUDataViewControllerDelegate;
 
@@ -26,7 +25,7 @@
 @property double distance_y;
 
 + (instancetype) sharedIMUDataManager;
-- (id <IMUDataViewControllerDelegate>)setIMUdatavalue: (NSString *) Acc_x;
+//- (NSString *) getIMUdatavalue;
 
 
 @end

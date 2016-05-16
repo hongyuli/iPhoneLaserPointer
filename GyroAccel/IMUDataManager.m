@@ -73,8 +73,8 @@
     return nil;
 }
 
--(void) setIMUdatavalue: (NSString *) Acc_x{
-    Acc_x =self.accVal_x;
+- (NSString *) getIMUdatavalue{
+    return self.accVal_x;
 }
 
 @end

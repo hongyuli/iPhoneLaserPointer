@@ -72,7 +72,8 @@ class ViewController: UIViewController{
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         self.portNumber?.text = "\(appDelegate.getPortNumber())"
         self.ipaddress?.text = self.getWiFiAddress()
-        delegate?.setIMUdatavalue((self.accX?.text)!)
+        var accXValue = delegate?.getIMUdatavalue()
+        self.accX?.text = (accXValue)! as String
         
         
 //        movementManager.gyroUpdateInterval = 0.2
