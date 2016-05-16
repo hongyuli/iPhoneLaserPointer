@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+
+@objc public protocol IMUDataViewControllerDelegate: class {
+    func setIMUdatavalue(Acc_x: NSString)
+}

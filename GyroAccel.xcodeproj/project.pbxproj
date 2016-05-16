@@ -14,6 +14,7 @@
 		49282D9B1C76599C00F52DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49282D991C76599C00F52DCF /* LaunchScreen.storyboard */; };
 		49282DA61C76599C00F52DCF /* GyroAccelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49282DA51C76599C00F52DCF /* GyroAccelTests.swift */; };
 		49282DB11C76599C00F52DCF /* GyroAccelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49282DB01C76599C00F52DCF /* GyroAccelUITests.swift */; };
+		5830FCD51CE97C91009BA1CC /* IMUDataViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5830FCD41CE97C91009BA1CC /* IMUDataViewControllerDelegate.swift */; };
 		586169991CCF16AB00236614 /* IMUDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 586169981CCF16AB00236614 /* IMUDataManager.m */; };
 		5863380F1CC73DE80073F6B4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 5863380E1CC73DE80073F6B4 /* index.html */; };
 		58B23BEC1CC6D86500DFD688 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B23BC71CC6D86500DFD688 /* DDData.m */; };
@@ -82,6 +83,7 @@
 		49282DAC1C76599C00F52DCF /* GyroAccelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GyroAccelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49282DB01C76599C00F52DCF /* GyroAccelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroAccelUITests.swift; sourceTree = "<group>"; };
 		49282DB21C76599C00F52DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830FCD41CE97C91009BA1CC /* IMUDataViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMUDataViewControllerDelegate.swift; sourceTree = "<group>"; };
 		586169981CCF16AB00236614 /* IMUDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMUDataManager.m; sourceTree = "<group>"; };
 		5861699A1CCF16D900236614 /* IMUDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMUDataManager.h; sourceTree = "<group>"; };
 		5863380E1CC73DE80073F6B4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				49282D901C76599C00F52DCF /* AppDelegate.swift */,
 				58B23BC01CC6D16C00DFD688 /* HTTPServer-Bridging-Header.h */,
 				49282D921C76599C00F52DCF /* ViewController.swift */,
+				5830FCD41CE97C91009BA1CC /* IMUDataViewControllerDelegate.swift */,
 				49282D941C76599C00F52DCF /* Main.storyboard */,
 				49282D971C76599C00F52DCF /* Assets.xcassets */,
 				49282D991C76599C00F52DCF /* LaunchScreen.storyboard */,
@@ -540,6 +543,7 @@
 				58B23C151CC6D88100DFD688 /* GCDAsyncSocket.m in Sources */,
 				58B23BF31CC6D86500DFD688 /* MultipartFormDataParser.m in Sources */,
 				58B23BF71CC6D86500DFD688 /* HTTPDataResponse.m in Sources */,
+				5830FCD51CE97C91009BA1CC /* IMUDataViewControllerDelegate.swift in Sources */,
 				58B23BF61CC6D86500DFD688 /* HTTPAsyncFileResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

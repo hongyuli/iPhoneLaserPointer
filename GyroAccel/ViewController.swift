@@ -26,6 +26,8 @@ class ViewController: UIViewController{
     
     var imudataManager = IMUDataManager.sharedIMUDataManager()
     
+    weak var delegate:IMUDataViewControllerDelegate?
+    
     //Outlets
     
     @IBOutlet var accX: UILabel!
@@ -70,6 +72,8 @@ class ViewController: UIViewController{
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         self.portNumber?.text = "\(appDelegate.getPortNumber())"
         self.ipaddress?.text = self.getWiFiAddress()
+        delegate?.setIMUdatavalue((self.accX?.text)!)
+        
         
 //        movementManager.gyroUpdateInterval = 0.2
 //        movementManager.accelerometerUpdateInterval = 0.2
@@ -93,10 +97,9 @@ class ViewController: UIViewController{
 //            
 //        })
         
-        
-        
-        
     }
+    
+    
     
     
     func outputAccData(acceleration: CMAcceleration){

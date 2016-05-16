@@ -60,7 +60,7 @@
                      
                      self.distance_x = self.distance_x+self.speed_x;
                      self.distance_y = self.distance_y+self.speed_y;
-                     
+                                          
                  }];
             }
         }
@@ -71,6 +71,10 @@
         return self;
     }
     return nil;
+}
+
+-(void) setIMUdatavalue: (NSString *) Acc_x{
+    Acc_x =self.accVal_x;
 }
 
 @end
