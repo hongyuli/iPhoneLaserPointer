@@ -35,6 +35,8 @@
     self.speed_y=0;
     self.distance_x=0;
     self.distance_y=0;
+    ViewController.sharedViewControllerIntance.delegate =self;
+    
     if (self = [super init]) {
         motionManager = [[CMMotionManager alloc] init];
         //MotionManager
@@ -54,6 +56,7 @@
                      self.accVal_x = [NSString stringWithFormat:@"%.02f", devicemotion.userAcceleration.x];
                      self.accVal_y = [NSString stringWithFormat:@"%.02f", devicemotion.userAcceleration.y];
                      self.accVal_z = [NSString stringWithFormat:@"%.02f", devicemotion.userAcceleration.z];
+                     
                      
                      self.speed_x = self.speed_x + devicemotion.userAcceleration.y;
                      self.speed_y = self.speed_y + devicemotion.userAcceleration.z;

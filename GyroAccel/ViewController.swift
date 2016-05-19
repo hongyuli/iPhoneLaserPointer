@@ -14,6 +14,8 @@ import CoreMotion
 
 class ViewController: UIViewController{
     
+    static let sharedViewControllerIntance = ViewController()
+    
     //Instance Variables
     
     var currentMaxAccelX: Double = 0.0
